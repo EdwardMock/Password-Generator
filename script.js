@@ -1,21 +1,21 @@
 // Assignment code here
 
-var userLength = Number(window.prompt("How many characters total do you want to include? Minimum of 8 and maximum of 128 characters", "8"));
+var userLength = Number(window.prompt("How many characters total do you want to include? \n Minimum of 8 and maximum of 128 characters"));
   if ((userLength <7)) {window.alert("Error: Please enter a number between 8 and 128");}
   else if ((userLength >129)) {window.alert("Error: Please enter a number between 8 and 128");} 
   else (userLength > 7 === 129);
 console.log(userLength);
 
-var userNumber = (window.confirm("Should the password include numbers? Yes or No", "yes"));
+var userNumber = (window.confirm("Should the password include numbers? \n Ok for Yes, Cancel for No"));
 console.log(userNumber);
 
-var userSymbol = (window.confirm("Should the password include symbols? Yes or No", "yes"));
+var userSymbol = (window.confirm("Should the password include symbols? \n Ok for Yes, Cancel for No"));
 console.log(userSymbol);
 
-var userUppercase = (window.confirm("Should the password include upper-case letters? Yes or No", "yes"));
+var userUppercase = (window.confirm("Should the password include upper-case letters? \n Ok for Yes, Cancel for No"));
 console.log(userUppercase);
 
-var userLowercase = (window.confirm("Should the password include lower-case letters? Yes or No"));
+var userLowercase = (window.confirm("Should the password include lower-case letters? \n Ok for Yes, Cancel for No"));
 console.log(userLowercase);
 
 
