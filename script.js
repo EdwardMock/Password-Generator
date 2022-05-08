@@ -1,6 +1,9 @@
 // Assignment code here
-//Symbols " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
 var userLength = Number(window.prompt("How many characters total do you want to include? Minimum of 8 and maximum of 128 characters", "8"));
+  if ((userLength <7)) {window.alert("Error: Please enter a number between 8 and 128");}
+  else if ((userLength >129)) {window.alert("Error: Please enter a number between 8 and 128");} 
+  else (userLength > 7 === 129);
 console.log(userLength);
 
 var userNumber = (window.confirm("Should the password include numbers? Yes or No", "yes"));
@@ -36,10 +39,8 @@ function generatePassword() {
   var upperClassSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var lowerClassSet = 'abcdefghijklmnopqrstuvwxyz';
 
-  if (userLength <= 8) alert("Please enter a number larger than 7")
-  else if (userLength >=128) alert("Please enter a number less  than 129")
-  else if (userLength > 8 === 128) passLength;
-  else if (userNumber) numberSet; 
+  
+  if (userNumber) numberSet; 
   else if (userSymbol == true) symbolSet;
   else if (userUppercase == true) upperClassSet;
   else if (userLowercase == true) lowerClassSet;
